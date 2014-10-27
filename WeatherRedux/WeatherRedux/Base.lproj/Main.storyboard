@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CPE-GG-Aye">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -366,7 +366,7 @@
                                 <constraints>
                                     <constraint firstItem="Lft-Cb-wzy" firstAttribute="leading" secondItem="yYr-6u-vUL" secondAttribute="trailing" id="0J8-u9-BKE"/>
                                     <constraint firstItem="tLQ-aR-Bu4" firstAttribute="top" secondItem="c8P-jF-sYs" secondAttribute="bottom" id="1Iu-b5-Tcq"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="1Th-12-sbY"/>
+                                    <constraint firstAttribute="height" constant="85" id="1Th-12-sbY"/>
                                     <constraint firstAttribute="bottom" secondItem="mM3-MU-zRE" secondAttribute="bottom" constant="40" id="1oq-fb-mXT"/>
                                     <constraint firstItem="RlO-y7-5CI" firstAttribute="top" secondItem="asu-1r-ih9" secondAttribute="bottom" id="22r-Hd-H0J"/>
                                     <constraint firstItem="gQQ-OZ-bQz" firstAttribute="height" secondItem="Fd7-Xw-zHP" secondAttribute="height" id="2Gs-Qo-5kR"/>
@@ -394,7 +394,7 @@
                                     <constraint firstItem="g1A-AF-uWV" firstAttribute="top" secondItem="Lft-Cb-wzy" secondAttribute="bottom" id="G7o-Fu-jYc"/>
                                     <constraint firstItem="gQQ-OZ-bQz" firstAttribute="height" secondItem="Pnf-ac-De4" secondAttribute="height" id="GLx-42-u5j"/>
                                     <constraint firstItem="yYr-6u-vUL" firstAttribute="top" secondItem="vjr-Hj-jEY" secondAttribute="bottom" constant="5" id="Ghg-DV-WuR"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="H6u-uf-KS8"/>
+                                    <constraint firstAttribute="width" constant="300" id="H6u-uf-KS8"/>
                                     <constraint firstItem="UWD-4N-MI5" firstAttribute="height" secondItem="pSc-61-UBg" secondAttribute="height" id="H9y-2y-BST"/>
                                     <constraint firstItem="Pnf-ac-De4" firstAttribute="leading" secondItem="n8V-2p-gtJ" secondAttribute="trailing" id="HRI-Ba-pXl"/>
                                     <constraint firstItem="rhU-kk-4zN" firstAttribute="height" secondItem="g1A-AF-uWV" secondAttribute="height" id="HaK-tH-yN5"/>
@@ -489,15 +489,533 @@
                             <constraint firstAttribute="centerX" secondItem="tsd-Fz-XTt" secondAttribute="centerX" id="vvJ-pD-Xqz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bMf-GN-GJ4"/>
+                    <connections>
+                        <segue destination="twG-dJ-Q9r" kind="show" identifier="dailySegue" id="2mf-Cn-OZk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="398" y="398.5"/>
+            <point key="canvasLocation" x="1224" y="398"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8Lw-ZI-WrQ">
+            <objects>
+                <viewController id="twG-dJ-Q9r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vxI-6V-Ql5"/>
+                        <viewControllerLayoutGuide type="bottom" id="qLD-tB-f5K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vae-fx-HTc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Earth inverted.png" translatesAutoresizingMaskIntoConstraints="NO" id="KtO-8Y-cU9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOM-Ve-K9S" userLabel="Container View">
+                                <rect key="frame" x="150" y="28" width="300" height="524"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpi-JZ-jNr" userLabel="Top Line">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Lz7-8B-HSn"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="5" id="TbC-fo-1TZ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xiy-Nc-QFS" userLabel="1st Line">
+                                        <rect key="frame" x="0.0" y="88" width="300" height="3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="2Fq-CN-NNN"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="3" id="vwe-AG-zNz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBO-g8-Wof" userLabel="2nd Line">
+                                        <rect key="frame" x="0.0" y="174" width="300" height="3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="3" id="khX-LN-A5X"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="rNg-cT-zmo"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoM-zh-iey" userLabel="3rd Line">
+                                        <rect key="frame" x="0.0" y="260" width="300" height="3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="46c-KT-N9v"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="3" id="vQh-RS-31g"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FU3-Eb-QqG" userLabel="4th Line">
+                                        <rect key="frame" x="0.0" y="346" width="300" height="3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="3" id="KcD-t7-m1A"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="S8v-vb-7HF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reE-gF-BpR" userLabel="5th Line">
+                                        <rect key="frame" x="0.0" y="432" width="300" height="3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="3Qu-RG-Uoo"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="3" id="EsM-LL-pWb"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxK-ru-vBL" userLabel="Btm Line">
+                                        <rect key="frame" x="0.0" y="519" width="300" height="5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="5" id="Tc4-UG-AeY"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="dnb-Yw-Msc"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRy-Z2-R8m" userLabel="Now Container">
+                                        <rect key="frame" x="0.0" y="5" width="300" height="83"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZu-II-MGc" userLabel="NOW">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="68"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bring Umbrella" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WC0-lL-Tu6">
+                                                <rect key="frame" x="25" y="5" width="215" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="108°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AD-J5-o9d">
+                                                <rect key="frame" x="30" y="20" width="60" height="30"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="29"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hum: 89%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqZ-4f-yco">
+                                                <rect key="frame" x="30" y="50" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rain? 87% chance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfS-Wf-flY">
+                                                <rect key="frame" x="100" y="20" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wind: WNW 10 mph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYM-gj-MXZ">
+                                                <rect key="frame" x="100" y="35" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visibility: 10 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWS-Ux-2FO">
+                                                <rect key="frame" x="100" y="50" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MCloudy.png" translatesAutoresizingMaskIntoConstraints="NO" id="lye-er-NQM" userLabel="now view - MCloudy.png">
+                                                <rect key="frame" x="240" y="5" width="40" height="40"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sep 30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3k-5O-8p4">
+                                                <rect key="frame" x="240" y="50" width="40" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="U9w-1r-Q1e"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="83" id="dG8-Wb-SHj"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVT-pf-EiM" userLabel="Day 1 Container">
+                                        <rect key="frame" x="0.0" y="91" width="300" height="83"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeI-wR-qWK" userLabel="DAY 1">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="68"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cloudy, no chance of rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3d-eg-aAX">
+                                                <rect key="frame" x="25" y="0.0" width="215" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="13"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hi: 98°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gx-cN-nUp">
+                                                <rect key="frame" x="30" y="15" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lo: 89°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3X-k5-4jg">
+                                                <rect key="frame" x="30" y="30" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hum: 89%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="910-pG-t9p">
+                                                <rect key="frame" x="30" y="45" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rain? 87% chance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq2-av-Yl4">
+                                                <rect key="frame" x="100" y="15" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wind: WNW 10 mph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ5-zo-1B3">
+                                                <rect key="frame" x="100" y="30" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visibility: 10 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgc-MP-vin">
+                                                <rect key="frame" x="100" y="45" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MCloudy2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ihd-wF-nIb" userLabel="day1 view - MCloudy2.png">
+                                                <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feb 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pE8-fI-44i">
+                                                <rect key="frame" x="240" y="45" width="40" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="83" id="KoT-gW-D0F"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ugL-Uf-PLU"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3d2-T4-JPw" userLabel="Day 2 Container">
+                                        <rect key="frame" x="0.0" y="177" width="300" height="83"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="t" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1x-K5-qc0" userLabel="DAY 2">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="68"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cloudy, no chance of rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaK-lM-8Gq">
+                                                <rect key="frame" x="25" y="0.0" width="215" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="13"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hi: 98°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFD-fv-WjM">
+                                                <rect key="frame" x="30" y="15" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lo: 89°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOC-p2-xRe">
+                                                <rect key="frame" x="30" y="30" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hum: 89%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqy-RC-Cv5">
+                                                <rect key="frame" x="30" y="45" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rain? 87% chance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cs-GR-3VG">
+                                                <rect key="frame" x="100" y="15" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wind: WNW 10 mph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ej-SR-95X">
+                                                <rect key="frame" x="100" y="30" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visibility: 10 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he6-1C-w1U">
+                                                <rect key="frame" x="100" y="45" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sunny2.png" translatesAutoresizingMaskIntoConstraints="NO" id="nws-Sc-Jnu" userLabel="day2 view - sunny2.png">
+                                                <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aug 30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVA-tp-Yek">
+                                                <rect key="frame" x="240" y="45" width="40" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="83" id="MDp-hs-cpT"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="OMs-5C-wfu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaM-CD-3bq" userLabel="Day 3 Container">
+                                        <rect key="frame" x="0.0" y="263" width="300" height="83"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="w" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrg-2b-4fW" userLabel="DAY 3">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="68"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cloudy, no chance of rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9f4-fq-5Wo">
+                                                <rect key="frame" x="25" y="0.0" width="215" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="13"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hi: 98°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjm-bv-d15">
+                                                <rect key="frame" x="30" y="15" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lo: 89°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5GD-oE-nQY">
+                                                <rect key="frame" x="30" y="30" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hum: 89%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9L-J4-RU5">
+                                                <rect key="frame" x="30" y="45" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rain? 87% chance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66q-Nu-eoL">
+                                                <rect key="frame" x="100" y="15" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wind: WNW 10 mph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZJ-fV-npg">
+                                                <rect key="frame" x="100" y="30" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visibility: 10 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daW-YZ-VX2">
+                                                <rect key="frame" x="100" y="45" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloudy2.png" translatesAutoresizingMaskIntoConstraints="NO" id="jmT-M7-urD" userLabel="day3 view - cloudy2.png">
+                                                <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jun 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdQ-Ec-ki7">
+                                                <rect key="frame" x="240" y="45" width="40" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="83" id="GIG-ru-NUJ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Y1E-6l-ye3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6K-e2-V9M" userLabel="Day 4 Container">
+                                        <rect key="frame" x="0.0" y="349" width="300" height="83"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="r" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rus-DJ-1bO" userLabel="DAY 4">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="68"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cloudy, no chance of rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsV-8f-n3Z">
+                                                <rect key="frame" x="25" y="0.0" width="215" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="13"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hi: 98°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkf-1g-RBK">
+                                                <rect key="frame" x="30" y="15" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lo: 89°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydq-vv-2Bs">
+                                                <rect key="frame" x="30" y="30" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hum: 89%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCG-5O-jMh">
+                                                <rect key="frame" x="30" y="45" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rain? 87% chance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbn-NN-iCo">
+                                                <rect key="frame" x="100" y="15" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wind: WNW 10 mph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGJ-rU-0vE">
+                                                <rect key="frame" x="100" y="30" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visibility: 10 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBA-tA-NEh">
+                                                <rect key="frame" x="100" y="45" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snow2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iyl-5T-3Hj" userLabel="day4 view - snow2.png">
+                                                <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="May 6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc8-Ut-LHY">
+                                                <rect key="frame" x="240" y="45" width="40" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="f6t-BH-eMF"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="83" id="rW4-Bx-eTs"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2f-VA-3nG" userLabel="Day 5 Container">
+                                        <rect key="frame" x="0.0" y="435" width="300" height="84"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="f" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtZ-hf-no3" userLabel="DAY 5">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="68"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cloudy, no chance of rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ8-Zd-nAC">
+                                                <rect key="frame" x="25" y="0.0" width="215" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="13"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hi: 98°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbg-Bx-Kou">
+                                                <rect key="frame" x="30" y="15" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lo: 89°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVv-aJ-NDd">
+                                                <rect key="frame" x="30" y="30" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hum: 89%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1o-vx-BvD">
+                                                <rect key="frame" x="30" y="45" width="60" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rain? 87% chance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypb-I1-NUc">
+                                                <rect key="frame" x="100" y="15" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wind: WNW 10 mph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2l-Ch-Ixl">
+                                                <rect key="frame" x="100" y="30" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visibility: 10 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5O-Cx-I9h">
+                                                <rect key="frame" x="100" y="45" width="140" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thunderstorm2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-qA-Mrx" userLabel="day5 view - thunderstorm2.png">
+                                                <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nov 21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kg-Xm-jcZ">
+                                                <rect key="frame" x="240" y="45" width="40" height="15"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="84" id="Q63-FE-fAZ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="tXD-Be-elp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kxK-ru-vBL" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="2Rh-CW-Afy"/>
+                                    <constraint firstItem="sRy-Z2-R8m" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="3un-BZ-uOi"/>
+                                    <constraint firstItem="V2f-VA-3nG" firstAttribute="top" secondItem="reE-gF-BpR" secondAttribute="bottom" id="5je-zc-JuW"/>
+                                    <constraint firstAttribute="trailing" secondItem="reE-gF-BpR" secondAttribute="trailing" id="7zs-fV-WyG"/>
+                                    <constraint firstItem="xBO-g8-Wof" firstAttribute="top" secondItem="Xiy-Nc-QFS" secondAttribute="bottom" constant="83" id="8c9-zk-rFb"/>
+                                    <constraint firstAttribute="trailing" secondItem="3d2-T4-JPw" secondAttribute="trailing" id="BCo-CY-8Lt"/>
+                                    <constraint firstItem="FU3-Eb-QqG" firstAttribute="top" secondItem="XaM-CD-3bq" secondAttribute="bottom" id="Bkt-2R-dRF"/>
+                                    <constraint firstItem="xBO-g8-Wof" firstAttribute="top" secondItem="kVT-pf-EiM" secondAttribute="bottom" id="Dwq-UT-YNz"/>
+                                    <constraint firstItem="kVT-pf-EiM" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="EBT-jk-7V0"/>
+                                    <constraint firstItem="p6K-e2-V9M" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="Fe2-Wr-xSu"/>
+                                    <constraint firstItem="kVT-pf-EiM" firstAttribute="top" secondItem="Xiy-Nc-QFS" secondAttribute="bottom" id="Gjb-YK-ktC"/>
+                                    <constraint firstItem="p6K-e2-V9M" firstAttribute="top" secondItem="FU3-Eb-QqG" secondAttribute="bottom" id="Gzg-4P-nOQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="kxK-ru-vBL" secondAttribute="trailing" id="H91-7O-bTn"/>
+                                    <constraint firstAttribute="trailing" secondItem="xBO-g8-Wof" secondAttribute="trailing" id="IMP-1a-zW3"/>
+                                    <constraint firstItem="XaM-CD-3bq" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="IhN-jk-tV6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kpi-JZ-jNr" secondAttribute="trailing" id="IyP-77-1Hm"/>
+                                    <constraint firstItem="reE-gF-BpR" firstAttribute="top" secondItem="FU3-Eb-QqG" secondAttribute="bottom" constant="83" id="Jga-rp-SK4"/>
+                                    <constraint firstAttribute="trailing" secondItem="kVT-pf-EiM" secondAttribute="trailing" id="KRu-df-ddF"/>
+                                    <constraint firstItem="xBO-g8-Wof" firstAttribute="top" secondItem="Xiy-Nc-QFS" secondAttribute="bottom" constant="83" id="KrA-a7-jf2"/>
+                                    <constraint firstItem="Kpi-JZ-jNr" firstAttribute="top" secondItem="lOM-Ve-K9S" secondAttribute="top" id="MjF-YP-r0l"/>
+                                    <constraint firstItem="YoM-zh-iey" firstAttribute="top" secondItem="3d2-T4-JPw" secondAttribute="bottom" id="Nv9-Go-ZCv"/>
+                                    <constraint firstItem="V2f-VA-3nG" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="PJY-Xf-nsm"/>
+                                    <constraint firstItem="Kpi-JZ-jNr" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="QnX-VD-CLB"/>
+                                    <constraint firstItem="xBO-g8-Wof" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="SJX-dd-Upf"/>
+                                    <constraint firstItem="Kpi-JZ-jNr" firstAttribute="top" secondItem="lOM-Ve-K9S" secondAttribute="top" id="SSC-RQ-W6u"/>
+                                    <constraint firstItem="3d2-T4-JPw" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="Sti-9w-Vx9"/>
+                                    <constraint firstItem="Xiy-Nc-QFS" firstAttribute="top" secondItem="Kpi-JZ-jNr" secondAttribute="bottom" constant="83" id="UL0-iV-Ybn"/>
+                                    <constraint firstItem="3d2-T4-JPw" firstAttribute="top" secondItem="xBO-g8-Wof" secondAttribute="bottom" id="Ufw-qx-O7I"/>
+                                    <constraint firstItem="FU3-Eb-QqG" firstAttribute="top" secondItem="YoM-zh-iey" secondAttribute="bottom" constant="83" id="WZ4-mu-jc0"/>
+                                    <constraint firstItem="FU3-Eb-QqG" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="Yo7-sX-I92"/>
+                                    <constraint firstItem="reE-gF-BpR" firstAttribute="top" secondItem="p6K-e2-V9M" secondAttribute="bottom" id="ZeY-Av-aG4"/>
+                                    <constraint firstAttribute="trailing" secondItem="XaM-CD-3bq" secondAttribute="trailing" id="atl-Sc-Imc"/>
+                                    <constraint firstItem="YoM-zh-iey" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="axR-id-XS2"/>
+                                    <constraint firstAttribute="trailing" secondItem="p6K-e2-V9M" secondAttribute="trailing" id="bkR-O1-wbN"/>
+                                    <constraint firstItem="kxK-ru-vBL" firstAttribute="top" secondItem="reE-gF-BpR" secondAttribute="bottom" constant="84" id="clP-9y-tIl"/>
+                                    <constraint firstAttribute="trailing" secondItem="FU3-Eb-QqG" secondAttribute="trailing" id="dFT-ql-9SK"/>
+                                    <constraint firstItem="YoM-zh-iey" firstAttribute="top" secondItem="xBO-g8-Wof" secondAttribute="bottom" constant="83" id="dJI-0K-2BB"/>
+                                    <constraint firstItem="YoM-zh-iey" firstAttribute="top" secondItem="xBO-g8-Wof" secondAttribute="bottom" constant="83" id="hWp-ub-Ubo"/>
+                                    <constraint firstItem="FU3-Eb-QqG" firstAttribute="top" secondItem="YoM-zh-iey" secondAttribute="bottom" constant="83" id="iOH-YF-W8z"/>
+                                    <constraint firstItem="reE-gF-BpR" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="jp3-mw-5YW"/>
+                                    <constraint firstAttribute="trailing" secondItem="YoM-zh-iey" secondAttribute="trailing" id="k2X-7L-rkP"/>
+                                    <constraint firstAttribute="bottom" secondItem="kxK-ru-vBL" secondAttribute="bottom" id="lb6-fL-ucg"/>
+                                    <constraint firstItem="reE-gF-BpR" firstAttribute="top" secondItem="FU3-Eb-QqG" secondAttribute="bottom" constant="83" id="mUJ-gC-s5c"/>
+                                    <constraint firstAttribute="trailing" secondItem="V2f-VA-3nG" secondAttribute="trailing" id="nED-jA-DI8"/>
+                                    <constraint firstItem="Xiy-Nc-QFS" firstAttribute="top" secondItem="Kpi-JZ-jNr" secondAttribute="bottom" constant="83" id="nbL-z3-n6r"/>
+                                    <constraint firstItem="kxK-ru-vBL" firstAttribute="top" secondItem="reE-gF-BpR" secondAttribute="bottom" constant="84" id="phh-wf-P2I"/>
+                                    <constraint firstAttribute="height" constant="524" id="qBX-ea-RKU"/>
+                                    <constraint firstItem="kxK-ru-vBL" firstAttribute="top" secondItem="V2f-VA-3nG" secondAttribute="bottom" id="qU8-cE-bbX"/>
+                                    <constraint firstAttribute="trailing" secondItem="sRy-Z2-R8m" secondAttribute="trailing" id="qfB-5C-hmO"/>
+                                    <constraint firstItem="Xiy-Nc-QFS" firstAttribute="top" secondItem="sRy-Z2-R8m" secondAttribute="bottom" id="rWI-t2-lp1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xiy-Nc-QFS" secondAttribute="trailing" id="svl-8K-ISK"/>
+                                    <constraint firstItem="XaM-CD-3bq" firstAttribute="top" secondItem="YoM-zh-iey" secondAttribute="bottom" id="u1M-x1-DoL"/>
+                                    <constraint firstAttribute="width" constant="300" id="xIG-UA-GmM"/>
+                                    <constraint firstItem="sRy-Z2-R8m" firstAttribute="top" secondItem="Kpi-JZ-jNr" secondAttribute="bottom" id="y88-C6-v9t"/>
+                                    <constraint firstItem="Xiy-Nc-QFS" firstAttribute="leading" secondItem="lOM-Ve-K9S" secondAttribute="leading" id="yJu-Bs-XbZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="lOM-Ve-K9S" secondAttribute="centerX" id="9JF-lq-zhD"/>
+                            <constraint firstAttribute="bottom" secondItem="KtO-8Y-cU9" secondAttribute="bottom" id="N2y-ma-wV4"/>
+                            <constraint firstItem="KtO-8Y-cU9" firstAttribute="top" secondItem="Vae-fx-HTc" secondAttribute="top" id="fAM-s0-9N3"/>
+                            <constraint firstItem="KtO-8Y-cU9" firstAttribute="leading" secondItem="Vae-fx-HTc" secondAttribute="leading" id="fLe-Ob-LxF"/>
+                            <constraint firstAttribute="trailing" secondItem="KtO-8Y-cU9" secondAttribute="trailing" id="liA-VF-MnD"/>
+                            <constraint firstItem="lOM-Ve-K9S" firstAttribute="top" secondItem="vxI-6V-Ql5" secondAttribute="bottom" constant="8" id="sCz-6I-rwd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdb-gI-crU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1917" y="398"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wML-rl-9vr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="CPE-GG-Aye" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uru-Op-Fot">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Khj-45-ZAO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kMZ-vv-trn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="398"/>
         </scene>
     </scenes>
     <resources>
         <image name="Earth 2.png" width="640" height="1136"/>
+        <image name="Earth inverted.png" width="640" height="1136"/>
+        <image name="MCloudy.png" width="60" height="60"/>
+        <image name="MCloudy2.png" width="60" height="60"/>
+        <image name="cloudy2.png" width="60" height="60"/>
+        <image name="snow2.png" width="60" height="60"/>
+        <image name="sunny2.png" width="60" height="60"/>
         <image name="sunny3.png" width="60" height="60"/>
+        <image name="thunderstorm2.png" width="60" height="60"/>
         <image name="weatherDeco.png" width="434" height="376"/>
     </resources>
 </document>
