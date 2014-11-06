@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		80B8DA550AD244D986D9E429 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3B3249C2EF4C65BBE84B4B /* libPods.a */; };
+		D295A21B19FE8EC900681967 /* MJHDataConversionMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = D295A21A19FE8EC900681967 /* MJHDataConversionMethods.m */; };
 		D2A40BB019FDC18E00B17F5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A40BAF19FDC18E00B17F5E /* main.m */; };
 		D2A40BB319FDC18E00B17F5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A40BB219FDC18E00B17F5E /* AppDelegate.m */; };
 		D2A40BB619FDC18E00B17F5E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A40BB519FDC18E00B17F5E /* ViewController.m */; };
@@ -53,6 +54,7 @@
 		D2A40C2019FDC50900B17F5E /* thunderstorm.png in Resources */ = {isa = PBXBuildFile; fileRef = D2A40C0219FDC50900B17F5E /* thunderstorm.png */; };
 		D2A40C2119FDC50900B17F5E /* thunderstorm2.png in Resources */ = {isa = PBXBuildFile; fileRef = D2A40C0319FDC50900B17F5E /* thunderstorm2.png */; };
 		D2A40C2219FDC50900B17F5E /* thunderstorm3.png in Resources */ = {isa = PBXBuildFile; fileRef = D2A40C0419FDC50900B17F5E /* thunderstorm3.png */; };
+		D2B2B52819FFEB580085FFB8 /* MJHConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B2B52719FFEB580085FFB8 /* MJHConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 
 /* Begin PBXFileReference section */
 		71F4A53E441D4029B108F070 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D295A21919FE8EC900681967 /* MJHDataConversionMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHDataConversionMethods.h; sourceTree = "<group>"; };
+		D295A21A19FE8EC900681967 /* MJHDataConversionMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHDataConversionMethods.m; sourceTree = "<group>"; };
 		D2A40BAA19FDC18E00B17F5E /* WeatherRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A40BAE19FDC18E00B17F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2A40BAF19FDC18E00B17F5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		D2A40C0219FDC50900B17F5E /* thunderstorm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thunderstorm.png; sourceTree = "<group>"; };
 		D2A40C0319FDC50900B17F5E /* thunderstorm2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thunderstorm2.png; sourceTree = "<group>"; };
 		D2A40C0419FDC50900B17F5E /* thunderstorm3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thunderstorm3.png; sourceTree = "<group>"; };
+		D2B2B52619FFEB580085FFB8 /* MJHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHConstants.h; sourceTree = "<group>"; };
+		D2B2B52719FFEB580085FFB8 /* MJHConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHConstants.m; sourceTree = "<group>"; };
 		DA3B3249C2EF4C65BBE84B4B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,6 +154,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D295A21819FE8EB200681967 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				D295A21919FE8EC900681967 /* MJHDataConversionMethods.h */,
+				D295A21A19FE8EC900681967 /* MJHDataConversionMethods.m */,
+			);
+			name = Methods;
+			sourceTree = "<group>";
+		};
 		D2A40BA119FDC18E00B17F5E = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +186,8 @@
 		D2A40BAC19FDC18E00B17F5E /* WeatherRedux */ = {
 			isa = PBXGroup;
 			children = (
+				D2B2B52A19FFEB7A0085FFB8 /* Constants */,
+				D295A21819FE8EB200681967 /* Methods */,
 				D2A40BB119FDC18E00B17F5E /* AppDelegate.h */,
 				D2A40BB219FDC18E00B17F5E /* AppDelegate.m */,
 				D2A40BB419FDC18E00B17F5E /* ViewController.h */,
@@ -277,6 +294,15 @@
 				D2A40C0419FDC50900B17F5E /* thunderstorm3.png */,
 			);
 			name = "Weather Icons";
+			sourceTree = "<group>";
+		};
+		D2B2B52A19FFEB7A0085FFB8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D2B2B52619FFEB580085FFB8 /* MJHConstants.h */,
+				D2B2B52719FFEB580085FFB8 /* MJHConstants.m */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +478,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B2B52819FFEB580085FFB8 /* MJHConstants.m in Sources */,
+				D295A21B19FE8EC900681967 /* MJHDataConversionMethods.m in Sources */,
 				D2A40BB619FDC18E00B17F5E /* ViewController.m in Sources */,
 				D2A40BB319FDC18E00B17F5E /* AppDelegate.m in Sources */,
 				D2A40BB019FDC18E00B17F5E /* main.m in Sources */,

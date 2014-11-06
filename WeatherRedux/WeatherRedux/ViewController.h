@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Forecastr.h>
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) Forecastr *forecastr;
+@property (strong, nonatomic) NSMutableDictionary *resultsDictionary;
 
 @end
 
