@@ -1421,7 +1421,7 @@
                                                             <constraint firstAttribute="width" secondItem="p7a-xu-DSr" secondAttribute="height" multiplier="1:1" id="Jd6-LU-O0g"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjD-Vp-tqe">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nov 21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjD-Vp-tqe">
                                                         <rect key="frame" x="0.0" y="63" width="45" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="fjD-Vp-tqe" secondAttribute="height" multiplier="3:1" id="PbB-KQ-0gY"/>
@@ -1487,7 +1487,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="Kbj-uB-V6x" secondAttribute="trailing" id="9Sy-xe-b6S"/>
                                                     <constraint firstAttribute="bottom" secondItem="Kbj-uB-V6x" secondAttribute="bottom" id="A5z-l0-Xhr"/>
@@ -1509,7 +1508,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="sAu-qI-7d6" secondAttribute="bottom" id="6B6-SW-PyP"/>
                                                     <constraint firstAttribute="trailing" secondItem="sAu-qI-7d6" secondAttribute="trailing" id="6D1-NT-L4P"/>
@@ -1524,55 +1522,95 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4b-yq-MjV" userLabel="View3a">
                                                         <rect key="frame" x="0.0" y="0.0" width="70" height="55"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hi: 98°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bu2-Iq-FUl">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hi: 98°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bu2-Iq-FUl">
                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="bu2-Iq-FUl" secondAttribute="height" multiplier="14:3" id="cIO-1q-h6g"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="13"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lo: 89°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kq4-uO-7Ag">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lo: 89°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kq4-uO-7Ag">
                                                                 <rect key="frame" x="0.0" y="20" width="70" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="kq4-uO-7Ag" secondAttribute="height" multiplier="14:3" id="6M0-gK-sk3"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="13"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hum: 89%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixr-g8-WnQ">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hum: 89%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixr-g8-WnQ">
                                                                 <rect key="frame" x="0.0" y="40" width="70" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Ixr-g8-WnQ" secondAttribute="height" multiplier="14:3" id="q2C-ms-C6c"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="13"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="1" green="0.53367552009999997" blue="0.51704722579999995" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
+                                                            <constraint firstItem="kq4-uO-7Ag" firstAttribute="leading" secondItem="f4b-yq-MjV" secondAttribute="leading" id="6m7-bM-qck"/>
+                                                            <constraint firstItem="Ixr-g8-WnQ" firstAttribute="leading" secondItem="f4b-yq-MjV" secondAttribute="leading" id="7kP-vj-kMU"/>
+                                                            <constraint firstAttribute="trailing" secondItem="kq4-uO-7Ag" secondAttribute="trailing" id="Cqw-3N-GZr"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bu2-Iq-FUl" secondAttribute="trailing" id="IAi-Pm-pIW"/>
+                                                            <constraint firstItem="bu2-Iq-FUl" firstAttribute="top" secondItem="f4b-yq-MjV" secondAttribute="top" id="JrM-n6-C2C"/>
+                                                            <constraint firstItem="bu2-Iq-FUl" firstAttribute="leading" secondItem="f4b-yq-MjV" secondAttribute="leading" id="Lwg-4b-dX9"/>
+                                                            <constraint firstItem="Ixr-g8-WnQ" firstAttribute="top" secondItem="kq4-uO-7Ag" secondAttribute="bottom" constant="5" id="Y4w-Yr-vak"/>
+                                                            <constraint firstItem="Ixr-g8-WnQ" firstAttribute="top" secondItem="kq4-uO-7Ag" secondAttribute="bottom" constant="5" id="gX0-p5-xgz"/>
+                                                            <constraint firstItem="kq4-uO-7Ag" firstAttribute="top" secondItem="bu2-Iq-FUl" secondAttribute="bottom" constant="5" id="ilm-wT-aHa"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Ixr-g8-WnQ" secondAttribute="trailing" id="lyw-ZN-stp"/>
+                                                            <constraint firstItem="kq4-uO-7Ag" firstAttribute="top" secondItem="bu2-Iq-FUl" secondAttribute="bottom" constant="5" id="riL-rp-T6k"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Ixr-g8-WnQ" secondAttribute="bottom" id="sBP-cZ-JfS"/>
                                                             <constraint firstAttribute="width" secondItem="f4b-yq-MjV" secondAttribute="height" multiplier="14:11" id="w1h-7c-Zdq"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fop-SC-bB3" userLabel="View3b">
                                                         <rect key="frame" x="75" y="0.0" width="140" height="55"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="rain? 87% chance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hh-Gi-N9Y">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rain? 87% chance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hh-Gi-N9Y">
                                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="7hh-Gi-N9Y" secondAttribute="height" multiplier="28:3" id="h3R-l4-6Lu"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="13"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="wind: WNW 10 mph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT4-uv-yDI">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wind: WNW 10 mph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT4-uv-yDI">
                                                                 <rect key="frame" x="0.0" y="20" width="140" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="dT4-uv-yDI" secondAttribute="height" multiplier="28:3" id="51s-Tw-KxG"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="13"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visibility: 10 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNX-nF-b6L">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="visibility: 10 mi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNX-nF-b6L">
                                                                 <rect key="frame" x="0.0" y="40" width="140" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="BNX-nF-b6L" secondAttribute="height" multiplier="28:3" id="wQN-v3-PP0"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="13"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
+                                                            <constraint firstItem="dT4-uv-yDI" firstAttribute="top" secondItem="7hh-Gi-N9Y" secondAttribute="bottom" constant="5" id="9tK-9B-FXJ"/>
                                                             <constraint firstAttribute="width" secondItem="fop-SC-bB3" secondAttribute="height" multiplier="28:11" id="C6a-Ij-i9T"/>
+                                                            <constraint firstItem="BNX-nF-b6L" firstAttribute="leading" secondItem="fop-SC-bB3" secondAttribute="leading" id="HTm-iE-9NO"/>
+                                                            <constraint firstAttribute="trailing" secondItem="BNX-nF-b6L" secondAttribute="trailing" id="IEn-Az-4UC"/>
+                                                            <constraint firstAttribute="bottom" secondItem="BNX-nF-b6L" secondAttribute="bottom" id="ND6-4t-1WA"/>
+                                                            <constraint firstItem="7hh-Gi-N9Y" firstAttribute="top" secondItem="fop-SC-bB3" secondAttribute="top" id="Pwa-Fg-Kag"/>
+                                                            <constraint firstItem="dT4-uv-yDI" firstAttribute="leading" secondItem="fop-SC-bB3" secondAttribute="leading" id="Q3i-Zf-Wst"/>
+                                                            <constraint firstItem="7hh-Gi-N9Y" firstAttribute="leading" secondItem="fop-SC-bB3" secondAttribute="leading" id="STR-YI-6Xg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="7hh-Gi-N9Y" secondAttribute="trailing" id="Vfu-fb-vsg"/>
+                                                            <constraint firstItem="BNX-nF-b6L" firstAttribute="top" secondItem="dT4-uv-yDI" secondAttribute="bottom" constant="5" id="bcz-YX-fVB"/>
+                                                            <constraint firstItem="BNX-nF-b6L" firstAttribute="top" secondItem="dT4-uv-yDI" secondAttribute="bottom" constant="5" id="eLA-0L-QQO"/>
+                                                            <constraint firstItem="dT4-uv-yDI" firstAttribute="top" secondItem="7hh-Gi-N9Y" secondAttribute="bottom" constant="5" id="m4h-9u-21w"/>
+                                                            <constraint firstAttribute="trailing" secondItem="dT4-uv-yDI" secondAttribute="trailing" id="rxI-JV-Ayb"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -1591,19 +1629,32 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gi7-Fe-9qF" userLabel="View4">
                                                 <rect key="frame" x="255" y="0.0" width="45" height="78"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tkc-4W-CDo">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light-rain2.png" translatesAutoresizingMaskIntoConstraints="NO" id="tkc-4W-CDo">
                                                         <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="tkc-4W-CDo" secondAttribute="height" multiplier="1:1" id="Qfz-D7-Jjk"/>
+                                                        </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYj-v8-jtt">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYj-v8-jtt">
                                                         <rect key="frame" x="0.0" y="63" width="45" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="qYj-v8-jtt" secondAttribute="height" multiplier="3:1" id="erL-gV-ezn"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="11"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="tkc-4W-CDo" secondAttribute="trailing" id="2Cz-QK-Iq4"/>
                                                     <constraint firstAttribute="width" secondItem="gi7-Fe-9qF" secondAttribute="height" multiplier="15:26" id="9fW-UZ-PJ3"/>
+                                                    <constraint firstItem="qYj-v8-jtt" firstAttribute="leading" secondItem="gi7-Fe-9qF" secondAttribute="leading" id="AkL-yI-y90"/>
+                                                    <constraint firstItem="qYj-v8-jtt" firstAttribute="top" secondItem="tkc-4W-CDo" secondAttribute="bottom" constant="18" id="B0F-Gd-Rg8"/>
+                                                    <constraint firstItem="tkc-4W-CDo" firstAttribute="leading" secondItem="gi7-Fe-9qF" secondAttribute="leading" id="O0p-Yo-OZV"/>
+                                                    <constraint firstItem="tkc-4W-CDo" firstAttribute="top" secondItem="gi7-Fe-9qF" secondAttribute="top" id="OLx-9o-v7d"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qYj-v8-jtt" secondAttribute="bottom" id="PdH-BG-8rn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qYj-v8-jtt" secondAttribute="trailing" id="U9b-KM-OGd"/>
+                                                    <constraint firstItem="qYj-v8-jtt" firstAttribute="top" secondItem="tkc-4W-CDo" secondAttribute="bottom" constant="18" id="sqc-jd-o2N"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -1886,6 +1937,7 @@
         <image name="Earth green.png" width="640" height="1136"/>
         <image name="Earth inverted.png" width="640" height="1136"/>
         <image name="cloudy2.png" width="60" height="60"/>
+        <image name="light-rain2.png" width="60" height="60"/>
         <image name="next-button-white.png" width="354" height="132"/>
         <image name="snow2.png" width="60" height="60"/>
         <image name="sunny.png" width="60" height="60"/>
