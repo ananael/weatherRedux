@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		80B8DA550AD244D986D9E429 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3B3249C2EF4C65BBE84B4B /* libPods.a */; };
+		D276182D1A11E6D300FCE108 /* MJHHourlyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D276182C1A11E6D300FCE108 /* MJHHourlyTableViewCell.m */; };
+		D27618311A11E6FF00FCE108 /* MJHHourlyWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27618301A11E6FF00FCE108 /* MJHHourlyWeatherViewController.m */; };
 		D27AFE001A1180AE00546A28 /* MJHDailyWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AFDFF1A1180AE00546A28 /* MJHDailyWeatherViewController.m */; };
 		D27AFE031A11812200546A28 /* hourly-black.png in Resources */ = {isa = PBXBuildFile; fileRef = D27AFE011A11812200546A28 /* hourly-black.png */; };
 		D27AFE041A11812200546A28 /* hourly-white.png in Resources */ = {isa = PBXBuildFile; fileRef = D27AFE021A11812200546A28 /* hourly-white.png */; };
@@ -74,6 +76,10 @@
 
 /* Begin PBXFileReference section */
 		71F4A53E441D4029B108F070 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D276182B1A11E6D300FCE108 /* MJHHourlyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHHourlyTableViewCell.h; sourceTree = "<group>"; };
+		D276182C1A11E6D300FCE108 /* MJHHourlyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHHourlyTableViewCell.m; sourceTree = "<group>"; };
+		D276182F1A11E6FF00FCE108 /* MJHHourlyWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHHourlyWeatherViewController.h; sourceTree = "<group>"; };
+		D27618301A11E6FF00FCE108 /* MJHHourlyWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHHourlyWeatherViewController.m; sourceTree = "<group>"; };
 		D27AFDFE1A1180AE00546A28 /* MJHDailyWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHDailyWeatherViewController.h; sourceTree = "<group>"; };
 		D27AFDFF1A1180AE00546A28 /* MJHDailyWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHDailyWeatherViewController.m; sourceTree = "<group>"; };
 		D27AFE011A11812200546A28 /* hourly-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hourly-black.png"; sourceTree = "<group>"; };
@@ -165,6 +171,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D276182E1A11E6DC00FCE108 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D276182B1A11E6D300FCE108 /* MJHHourlyTableViewCell.h */,
+				D276182C1A11E6D300FCE108 /* MJHHourlyTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		D27AFDFD1A11808B00546A28 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +187,8 @@
 				D2A40BB519FDC18E00B17F5E /* ViewController.m */,
 				D27AFDFE1A1180AE00546A28 /* MJHDailyWeatherViewController.h */,
 				D27AFDFF1A1180AE00546A28 /* MJHDailyWeatherViewController.m */,
+				D276182F1A11E6FF00FCE108 /* MJHHourlyWeatherViewController.h */,
+				D27618301A11E6FF00FCE108 /* MJHHourlyWeatherViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +198,7 @@
 			children = (
 				D295A21919FE8EC900681967 /* MJHDataConversionMethods.h */,
 				D295A21A19FE8EC900681967 /* MJHDataConversionMethods.m */,
+				D276182E1A11E6DC00FCE108 /* Views */,
 			);
 			name = Methods;
 			sourceTree = "<group>";
@@ -208,10 +226,10 @@
 		D2A40BAC19FDC18E00B17F5E /* WeatherRedux */ = {
 			isa = PBXGroup;
 			children = (
-				D2B2B52A19FFEB7A0085FFB8 /* Constants */,
-				D295A21819FE8EB200681967 /* Methods */,
 				D2A40BB119FDC18E00B17F5E /* AppDelegate.h */,
 				D2A40BB219FDC18E00B17F5E /* AppDelegate.m */,
+				D2B2B52A19FFEB7A0085FFB8 /* Constants */,
+				D295A21819FE8EB200681967 /* Methods */,
 				D27AFDFD1A11808B00546A28 /* Controllers */,
 				D2A40BB719FDC18E00B17F5E /* Main.storyboard */,
 				D2A40BBA19FDC18E00B17F5E /* Images.xcassets */,
@@ -507,12 +525,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27618311A11E6FF00FCE108 /* MJHHourlyWeatherViewController.m in Sources */,
 				D2B2B52819FFEB580085FFB8 /* MJHConstants.m in Sources */,
 				D295A21B19FE8EC900681967 /* MJHDataConversionMethods.m in Sources */,
 				D2A40BB619FDC18E00B17F5E /* ViewController.m in Sources */,
 				D2A40BB319FDC18E00B17F5E /* AppDelegate.m in Sources */,
 				D2A40BB019FDC18E00B17F5E /* main.m in Sources */,
 				D27AFE001A1180AE00546A28 /* MJHDailyWeatherViewController.m in Sources */,
+				D276182D1A11E6D300FCE108 /* MJHHourlyTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

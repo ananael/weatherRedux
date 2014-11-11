@@ -8,7 +8,7 @@
 
 #import "MJHDailyWeatherViewController.h"
 #import "MJHDataConversionMethods.h"
-//#import "MJHHourlyWeatherViewController.h"
+#import "MJHHourlyWeatherViewController.h"
 
 @interface MJHDailyWeatherViewController ()
 
@@ -217,17 +217,17 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    // Get the new view controller using [segue destinationViewController].
-//    // Pass the selected object to the new view controller.
-//    
-//    if ([segue.identifier isEqualToString:@"hourlySegue"]) {
-//        MJHHourlyWeatherViewController *hourlyVC = segue.destinationViewController;
-//        hourlyVC.resultsDictionary = self.resultsDictionary;
-//    }
-//    
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"hourlySegue"]) {
+        MJHHourlyWeatherViewController *hourlyVC = segue.destinationViewController;
+        hourlyVC.resultsDictionary = self.resultsDictionary;
+    }
+    
+}
 
 - (IBAction)backButtonTapped:(id)sender
 {
