@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <Forecastr.h>
 #import "MJHDataConversionMethods.h"
+#import "MJHDailyWeatherViewController.h"
 #import "MJHConstants.h"
 
 @interface ViewController ()
@@ -119,13 +120,13 @@
     NSLog(@"Button: X: %f  Y:%f",self.nextButtonLabel.frame.origin.x, self.nextButtonLabel.frame.origin.y);
 }
 
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if ([segue.identifier isEqualToString:@"dailySegue"]) {
-//        MJHDailyWeatherViewController *dailyVC = segue.destinationViewController;
-//        dailyVC.resultsDictionary = self.resultsDictionary;
-//    }
-//}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"dailySegue"]) {
+        MJHDailyWeatherViewController *dailyVC = segue.destinationViewController;
+        dailyVC.resultsDictionary = self.resultsDictionary;
+    }
+}
 
 - (IBAction)nextButtonTapped:(id)sender
 {

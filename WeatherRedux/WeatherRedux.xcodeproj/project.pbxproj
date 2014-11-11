@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		80B8DA550AD244D986D9E429 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3B3249C2EF4C65BBE84B4B /* libPods.a */; };
+		D27AFE001A1180AE00546A28 /* MJHDailyWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AFDFF1A1180AE00546A28 /* MJHDailyWeatherViewController.m */; };
+		D27AFE031A11812200546A28 /* hourly-black.png in Resources */ = {isa = PBXBuildFile; fileRef = D27AFE011A11812200546A28 /* hourly-black.png */; };
+		D27AFE041A11812200546A28 /* hourly-white.png in Resources */ = {isa = PBXBuildFile; fileRef = D27AFE021A11812200546A28 /* hourly-white.png */; };
+		D27AFE071A11814000546A28 /* home-black.png in Resources */ = {isa = PBXBuildFile; fileRef = D27AFE051A11814000546A28 /* home-black.png */; };
+		D27AFE081A11814000546A28 /* home-white.png in Resources */ = {isa = PBXBuildFile; fileRef = D27AFE061A11814000546A28 /* home-white.png */; };
 		D295A21B19FE8EC900681967 /* MJHDataConversionMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = D295A21A19FE8EC900681967 /* MJHDataConversionMethods.m */; };
 		D2A40BB019FDC18E00B17F5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A40BAF19FDC18E00B17F5E /* main.m */; };
 		D2A40BB319FDC18E00B17F5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A40BB219FDC18E00B17F5E /* AppDelegate.m */; };
@@ -69,6 +74,12 @@
 
 /* Begin PBXFileReference section */
 		71F4A53E441D4029B108F070 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D27AFDFE1A1180AE00546A28 /* MJHDailyWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHDailyWeatherViewController.h; sourceTree = "<group>"; };
+		D27AFDFF1A1180AE00546A28 /* MJHDailyWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHDailyWeatherViewController.m; sourceTree = "<group>"; };
+		D27AFE011A11812200546A28 /* hourly-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hourly-black.png"; sourceTree = "<group>"; };
+		D27AFE021A11812200546A28 /* hourly-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hourly-white.png"; sourceTree = "<group>"; };
+		D27AFE051A11814000546A28 /* home-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-black.png"; sourceTree = "<group>"; };
+		D27AFE061A11814000546A28 /* home-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-white.png"; sourceTree = "<group>"; };
 		D295A21919FE8EC900681967 /* MJHDataConversionMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHDataConversionMethods.h; sourceTree = "<group>"; };
 		D295A21A19FE8EC900681967 /* MJHDataConversionMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHDataConversionMethods.m; sourceTree = "<group>"; };
 		D2A40BAA19FDC18E00B17F5E /* WeatherRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +165,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D27AFDFD1A11808B00546A28 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2A40BB419FDC18E00B17F5E /* ViewController.h */,
+				D2A40BB519FDC18E00B17F5E /* ViewController.m */,
+				D27AFDFE1A1180AE00546A28 /* MJHDailyWeatherViewController.h */,
+				D27AFDFF1A1180AE00546A28 /* MJHDailyWeatherViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		D295A21819FE8EB200681967 /* Methods */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +212,7 @@
 				D295A21819FE8EB200681967 /* Methods */,
 				D2A40BB119FDC18E00B17F5E /* AppDelegate.h */,
 				D2A40BB219FDC18E00B17F5E /* AppDelegate.m */,
-				D2A40BB419FDC18E00B17F5E /* ViewController.h */,
-				D2A40BB519FDC18E00B17F5E /* ViewController.m */,
+				D27AFDFD1A11808B00546A28 /* Controllers */,
 				D2A40BB719FDC18E00B17F5E /* Main.storyboard */,
 				D2A40BBA19FDC18E00B17F5E /* Images.xcassets */,
 				D2A40BBC19FDC18E00B17F5E /* LaunchScreen.xib */,
@@ -253,6 +274,10 @@
 			children = (
 				D2A40BDF19FDC4E500B17F5E /* back-button-black.png */,
 				D2A40BE019FDC4E500B17F5E /* back-button-white.png */,
+				D27AFE051A11814000546A28 /* home-black.png */,
+				D27AFE061A11814000546A28 /* home-white.png */,
+				D27AFE011A11812200546A28 /* hourly-black.png */,
+				D27AFE021A11812200546A28 /* hourly-white.png */,
 				D2A40BE119FDC4E500B17F5E /* next-button-black.png */,
 				D2A40BE219FDC4E500B17F5E /* next-button-white.png */,
 			);
@@ -413,14 +438,18 @@
 				D2A40C0719FDC50900B17F5E /* cloudy3.png in Resources */,
 				D2A40C0D19FDC50900B17F5E /* light-rain3.png in Resources */,
 				D2A40C1319FDC50900B17F5E /* moon3.png in Resources */,
+				D27AFE031A11812200546A28 /* hourly-black.png in Resources */,
 				D2A40BBE19FDC18E00B17F5E /* LaunchScreen.xib in Resources */,
 				D2A40C1D19FDC50900B17F5E /* sun-rain.png in Resources */,
+				D27AFE081A11814000546A28 /* home-white.png in Resources */,
 				D2A40C1519FDC50900B17F5E /* snow2.png in Resources */,
 				D2A40BE319FDC4E500B17F5E /* back-button-black.png in Resources */,
 				D2A40C0C19FDC50900B17F5E /* light-rain2.png in Resources */,
+				D27AFE071A11814000546A28 /* home-black.png in Resources */,
 				D2A40C0619FDC50900B17F5E /* cloudy2.png in Resources */,
 				D2A40C2219FDC50900B17F5E /* thunderstorm3.png in Resources */,
 				D2A40BDC19FDC4D200B17F5E /* Earth 2.png in Resources */,
+				D27AFE041A11812200546A28 /* hourly-white.png in Resources */,
 				D2A40BDD19FDC4D200B17F5E /* Earth inverted.png in Resources */,
 				D2A40C1119FDC50900B17F5E /* moon.png in Resources */,
 				D2A40BBB19FDC18E00B17F5E /* Images.xcassets in Resources */,
@@ -483,6 +512,7 @@
 				D2A40BB619FDC18E00B17F5E /* ViewController.m in Sources */,
 				D2A40BB319FDC18E00B17F5E /* AppDelegate.m in Sources */,
 				D2A40BB019FDC18E00B17F5E /* main.m in Sources */,
+				D27AFE001A1180AE00546A28 /* MJHDailyWeatherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

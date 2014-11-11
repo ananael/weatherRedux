@@ -184,6 +184,9 @@
         UILabel *label = array[i];
         NSString *convertedDay = [self convertEpochTimeToHumanDay: dictionary[@"daily"][@"data"][i][@"time"]];
         label.text = convertedDay;
+        label.numberOfLines = 1;
+        label.font = [UIFont fontWithName:@"Thonburi" size:20];
+        [label setFont:[UIFont boldSystemFontOfSize:20]];
         
         [dayLabels addObject:label];
     }
