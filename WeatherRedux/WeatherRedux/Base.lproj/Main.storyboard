@@ -556,10 +556,10 @@
             </objects>
             <point key="canvasLocation" x="1224" y="648"/>
         </scene>
-        <!--View Controller-->
+        <!--Hourly Weather View Controller-->
         <scene sceneID="qxx-Ze-lcv">
             <objects>
-                <viewController id="VNy-Jk-2Im" sceneMemberID="viewController">
+                <viewController id="VNy-Jk-2Im" customClass="MJHHourlyWeatherViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xDz-m4-c6o"/>
                         <viewControllerLayoutGuide type="bottom" id="1UR-08-YBn"/>
@@ -623,7 +623,7 @@
                                             <constraint firstAttribute="width" secondItem="Rtv-2x-9mY" secondAttribute="height" multiplier="75:122" id="fAr-wC-4B3"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uiC-J4-0L0" customClass="MJHHourlyTableViewCell">
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="uiC-J4-0L0" customClass="MJHHourlyTableViewCell">
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uiC-J4-0L0" id="CW1-WH-Pdk">
                                                     <autoresizingMask key="autoresizingMask"/>
@@ -647,10 +647,14 @@
                                                     <constraint firstAttribute="width" secondItem="jaf-s9-23I" secondAttribute="height" multiplier="44:17" id="OT6-Ft-3wS"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <state key="normal" title="back">
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" backgroundImage="back-button-black.png">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="backButtonTapped:" destination="VNy-Jk-2Im" eventType="touchUpInside" id="l9A-kH-ioR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eL-we-tPY">
                                                 <rect key="frame" x="256" y="0.0" width="44" height="17"/>
@@ -658,13 +662,16 @@
                                                     <constraint firstAttribute="width" secondItem="6eL-we-tPY" secondAttribute="height" multiplier="44:17" id="YBg-nu-boo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <state key="normal" title="home">
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" backgroundImage="home-black.png">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="homeTapped:" destination="VNy-Jk-2Im" eventType="touchUpInside" id="HMn-Dj-qhI"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.56411507100000002" green="0.71709645280000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="6eL-we-tPY" firstAttribute="top" secondItem="B9x-NT-ZS6" secondAttribute="top" id="12w-o4-Gaf"/>
                                             <constraint firstAttribute="bottom" secondItem="6eL-we-tPY" secondAttribute="bottom" id="2Sg-cc-ml1"/>
@@ -678,7 +685,6 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="B9x-NT-ZS6" firstAttribute="top" secondItem="w76-zI-NLZ" secondAttribute="bottom" id="11v-gZ-Kl1"/>
                                     <constraint firstItem="Nym-6m-hNx" firstAttribute="leading" secondItem="wbS-co-gNw" secondAttribute="leading" id="2pA-h4-lyV"/>
@@ -724,6 +730,12 @@
                             <constraint firstItem="1UR-08-YBn" firstAttribute="top" secondItem="wbS-co-gNw" secondAttribute="bottom" constant="26" id="vLL-9b-bhL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButtonLabel" destination="jaf-s9-23I" id="GAl-15-9J4"/>
+                        <outlet property="backgroundImage" destination="dM7-Dl-337" id="65w-Nz-msq"/>
+                        <outlet property="homeButtonLabel" destination="6eL-we-tPY" id="Wxt-c1-vvv"/>
+                        <outlet property="hourlyTable" destination="Rtv-2x-9mY" id="0RA-hd-8Qs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltN-Ul-5wN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2246,6 +2258,7 @@
         <image name="Earth inverted.png" width="640" height="1136"/>
         <image name="back-button-black.png" width="354" height="132"/>
         <image name="cloudy2.png" width="60" height="60"/>
+        <image name="home-black.png" width="354" height="132"/>
         <image name="hourly-black.png" width="354" height="132"/>
         <image name="light-rain2.png" width="60" height="60"/>
         <image name="moon2.png" width="60" height="60"/>
