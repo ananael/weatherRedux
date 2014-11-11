@@ -697,7 +697,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="BcY-MF-ihN" secondAttribute="height" multiplier="7:13" id="gTI-TQ-BmF"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="28"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -898,7 +898,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="7Eh-8K-nBq" secondAttribute="height" multiplier="7:13" id="mvh-Lf-bdd"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="28"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1112,7 +1112,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Wvd-dm-ne4" secondAttribute="height" multiplier="7:13" id="IH4-jU-wFi"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="28"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1326,7 +1326,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="o7d-OU-2nW" secondAttribute="height" multiplier="7:13" id="ELc-nW-aar"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="28"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1540,7 +1540,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="sAu-qI-7d6" secondAttribute="height" multiplier="7:13" id="uXu-Ru-8BK"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="28"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1754,7 +1754,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="kPA-mu-Cg5" secondAttribute="height" multiplier="7:13" id="dwK-xr-3eC"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="28"/>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
