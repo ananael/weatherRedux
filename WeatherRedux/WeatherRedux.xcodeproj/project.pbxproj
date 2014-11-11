@@ -198,7 +198,6 @@
 			children = (
 				D295A21919FE8EC900681967 /* MJHDataConversionMethods.h */,
 				D295A21A19FE8EC900681967 /* MJHDataConversionMethods.m */,
-				D276182E1A11E6DC00FCE108 /* Views */,
 			);
 			name = Methods;
 			sourceTree = "<group>";
@@ -230,6 +229,7 @@
 				D2A40BB219FDC18E00B17F5E /* AppDelegate.m */,
 				D2B2B52A19FFEB7A0085FFB8 /* Constants */,
 				D295A21819FE8EB200681967 /* Methods */,
+				D276182E1A11E6DC00FCE108 /* Views */,
 				D27AFDFD1A11808B00546A28 /* Controllers */,
 				D2A40BB719FDC18E00B17F5E /* Main.storyboard */,
 				D2A40BBA19FDC18E00B17F5E /* Images.xcassets */,
