@@ -583,6 +583,30 @@
                                                     <constraint firstAttribute="width" secondItem="YQc-cU-jAZ" secondAttribute="height" multiplier="1:1" id="EUq-LB-JTc"/>
                                                 </constraints>
                                             </imageView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsH-LO-Vny" userLabel="View 1a">
+                                                <rect key="frame" x="0.0" y="39" width="300" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.53367552009999997" blue="0.51704722579999995" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caG-Tt-2V9" userLabel="View 1b">
+                                                <rect key="frame" x="0.0" y="79" width="300" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zr1-57-GHS" userLabel="View 1c">
+                                                <rect key="frame" x="0.0" y="109" width="151" height="86"/>
+                                                <color key="backgroundColor" red="1" green="0.53367552009999997" blue="0.51704722579999995" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4A-FW-gwN" userLabel="View 1d">
+                                                <rect key="frame" x="0.0" y="195" width="300" height="25"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bte-Ep-oBc" userLabel="View 1e">
+                                                <rect key="frame" x="0.0" y="228" width="300" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.53367552009999997" blue="0.51704722579999995" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcx-iL-TzY" userLabel="View 1c">
+                                                <rect key="frame" x="151" y="109" width="149" height="86"/>
+                                                <color key="backgroundColor" red="0.91183898939999997" green="0.2267508235" blue="1" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.56411507100000002" green="0.71709645280000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -611,15 +635,147 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1E-2u-8By" userLabel="View 2a">
                                                 <rect key="frame" x="0.0" y="5" width="300" height="22"/>
-                                                <color key="backgroundColor" red="0.56411507100000002" green="0.71709645280000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM4-xz-FUl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="IM4-xz-FUl" secondAttribute="height" multiplier="30:11" id="jsN-VV-3ha"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wind dir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13k-CF-xh6">
+                                                        <rect key="frame" x="60" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="13k-CF-xh6" secondAttribute="height" multiplier="30:11" id="ul0-Gh-Z6s"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wind mph" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fb-bO-yO9">
+                                                        <rect key="frame" x="120" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="1Fb-bO-yO9" secondAttribute="height" multiplier="30:11" id="Eml-G6-tWq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sunrise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2J-K7-ICO">
+                                                        <rect key="frame" x="180" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="a2J-K7-ICO" secondAttribute="height" multiplier="30:11" id="3wz-zF-0x6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sunset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEu-Ze-dDK">
+                                                        <rect key="frame" x="240" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="fEu-Ze-dDK" secondAttribute="height" multiplier="30:11" id="BMD-Q8-GMv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="13k-CF-xh6" secondAttribute="bottom" id="0gT-w8-tTY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="IM4-xz-FUl" secondAttribute="bottom" id="15R-A6-z0R"/>
+                                                    <constraint firstItem="fEu-Ze-dDK" firstAttribute="leading" secondItem="a2J-K7-ICO" secondAttribute="trailing" id="2Ml-at-KTt"/>
+                                                    <constraint firstAttribute="bottom" secondItem="a2J-K7-ICO" secondAttribute="bottom" id="7X1-8v-h7H"/>
+                                                    <constraint firstItem="1Fb-bO-yO9" firstAttribute="leading" secondItem="13k-CF-xh6" secondAttribute="trailing" id="9qU-Po-phv"/>
+                                                    <constraint firstItem="IM4-xz-FUl" firstAttribute="top" secondItem="m1E-2u-8By" secondAttribute="top" id="IQl-Qc-LZu"/>
+                                                    <constraint firstItem="13k-CF-xh6" firstAttribute="top" secondItem="m1E-2u-8By" secondAttribute="top" id="K2s-Ko-vsn"/>
                                                     <constraint firstAttribute="width" secondItem="m1E-2u-8By" secondAttribute="height" multiplier="150:11" id="M7L-Aj-1Em"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fEu-Ze-dDK" secondAttribute="trailing" id="MG3-Kd-Kyk"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1Fb-bO-yO9" secondAttribute="bottom" id="ML9-Te-yBU"/>
+                                                    <constraint firstItem="a2J-K7-ICO" firstAttribute="leading" secondItem="1Fb-bO-yO9" secondAttribute="trailing" id="MM4-VT-GPa"/>
+                                                    <constraint firstItem="13k-CF-xh6" firstAttribute="leading" secondItem="IM4-xz-FUl" secondAttribute="trailing" id="W1d-ZU-0XK"/>
+                                                    <constraint firstItem="1Fb-bO-yO9" firstAttribute="top" secondItem="m1E-2u-8By" secondAttribute="top" id="ZZ9-w5-KSN"/>
+                                                    <constraint firstItem="fEu-Ze-dDK" firstAttribute="leading" secondItem="a2J-K7-ICO" secondAttribute="trailing" id="icc-qV-EvN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fEu-Ze-dDK" secondAttribute="bottom" id="qJe-og-air"/>
+                                                    <constraint firstItem="1Fb-bO-yO9" firstAttribute="leading" secondItem="13k-CF-xh6" secondAttribute="trailing" id="sSZ-iN-sVc"/>
+                                                    <constraint firstItem="13k-CF-xh6" firstAttribute="leading" secondItem="IM4-xz-FUl" secondAttribute="trailing" id="uWB-Gd-vHl"/>
+                                                    <constraint firstItem="a2J-K7-ICO" firstAttribute="leading" secondItem="1Fb-bO-yO9" secondAttribute="trailing" id="vTx-qu-1cb"/>
+                                                    <constraint firstItem="IM4-xz-FUl" firstAttribute="leading" secondItem="m1E-2u-8By" secondAttribute="leading" id="yjx-Io-OCl"/>
+                                                    <constraint firstItem="a2J-K7-ICO" firstAttribute="top" secondItem="m1E-2u-8By" secondAttribute="top" id="zjH-yY-qsb"/>
+                                                    <constraint firstItem="fEu-Ze-dDK" firstAttribute="top" secondItem="m1E-2u-8By" secondAttribute="top" id="zoj-IV-UPN"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLt-gE-Rsa" userLabel="View 2b">
                                                 <rect key="frame" x="0.0" y="27" width="300" height="22"/>
-                                                <color key="backgroundColor" red="1" green="0.53367552009999997" blue="0.51704722579999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANN-lG-lge">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ANN-lG-lge" secondAttribute="height" multiplier="30:11" id="LD6-gg-GMQ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bG-68-SR8">
+                                                        <rect key="frame" x="60" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="3bG-68-SR8" secondAttribute="height" multiplier="30:11" id="gJV-rb-QV3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbL-ze-rB6">
+                                                        <rect key="frame" x="120" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="dbL-ze-rB6" secondAttribute="height" multiplier="30:11" id="saT-pH-hCX"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6:45am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XN9-Yr-ouq">
+                                                        <rect key="frame" x="180" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="XN9-Yr-ouq" secondAttribute="height" multiplier="30:11" id="LrR-sL-Q49"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:45pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weo-Wt-4D6">
+                                                        <rect key="frame" x="240" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="weo-Wt-4D6" secondAttribute="height" multiplier="30:11" id="eO7-xA-Dfe"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="3bG-68-SR8" firstAttribute="leading" secondItem="ANN-lG-lge" secondAttribute="trailing" id="361-x6-kzh"/>
+                                                    <constraint firstItem="dbL-ze-rB6" firstAttribute="leading" secondItem="3bG-68-SR8" secondAttribute="trailing" id="3KS-PS-uHC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="weo-Wt-4D6" secondAttribute="trailing" id="3iL-ek-H1q"/>
+                                                    <constraint firstItem="ANN-lG-lge" firstAttribute="leading" secondItem="LLt-gE-Rsa" secondAttribute="leading" id="5r6-Cc-vda"/>
+                                                    <constraint firstItem="weo-Wt-4D6" firstAttribute="top" secondItem="LLt-gE-Rsa" secondAttribute="top" id="8Ur-I7-7ZM"/>
+                                                    <constraint firstItem="XN9-Yr-ouq" firstAttribute="top" secondItem="LLt-gE-Rsa" secondAttribute="top" id="BOk-Ud-5Pm"/>
+                                                    <constraint firstItem="XN9-Yr-ouq" firstAttribute="leading" secondItem="dbL-ze-rB6" secondAttribute="trailing" id="EVv-yE-aMe"/>
+                                                    <constraint firstItem="XN9-Yr-ouq" firstAttribute="leading" secondItem="dbL-ze-rB6" secondAttribute="trailing" id="FSc-j7-D7V"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dbL-ze-rB6" secondAttribute="bottom" id="GSg-C1-3KC"/>
+                                                    <constraint firstItem="weo-Wt-4D6" firstAttribute="leading" secondItem="XN9-Yr-ouq" secondAttribute="trailing" id="Ixh-Eo-R3k"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3bG-68-SR8" secondAttribute="bottom" id="L3s-2S-VXE"/>
+                                                    <constraint firstItem="dbL-ze-rB6" firstAttribute="top" secondItem="LLt-gE-Rsa" secondAttribute="top" id="LiR-A2-k3t"/>
+                                                    <constraint firstItem="3bG-68-SR8" firstAttribute="top" secondItem="LLt-gE-Rsa" secondAttribute="top" id="MAI-h1-TEm"/>
+                                                    <constraint firstItem="ANN-lG-lge" firstAttribute="top" secondItem="LLt-gE-Rsa" secondAttribute="top" id="Mgt-ca-hWm"/>
+                                                    <constraint firstItem="3bG-68-SR8" firstAttribute="leading" secondItem="ANN-lG-lge" secondAttribute="trailing" id="NLG-5x-S5F"/>
+                                                    <constraint firstAttribute="bottom" secondItem="weo-Wt-4D6" secondAttribute="bottom" id="dbO-2E-g56"/>
+                                                    <constraint firstItem="weo-Wt-4D6" firstAttribute="leading" secondItem="XN9-Yr-ouq" secondAttribute="trailing" id="eFo-Kd-fp8"/>
+                                                    <constraint firstAttribute="bottom" secondItem="XN9-Yr-ouq" secondAttribute="bottom" id="oiN-Bs-Kbf"/>
+                                                    <constraint firstItem="dbL-ze-rB6" firstAttribute="leading" secondItem="3bG-68-SR8" secondAttribute="trailing" id="t5Z-El-V94"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ANN-lG-lge" secondAttribute="bottom" id="tMK-7B-b6q"/>
                                                     <constraint firstAttribute="width" secondItem="LLt-gE-Rsa" secondAttribute="height" multiplier="150:11" id="v84-Ct-XdG"/>
                                                 </constraints>
                                             </view>
@@ -632,16 +788,148 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYn-DM-8GU" userLabel="View 2c">
                                                 <rect key="frame" x="0.0" y="52" width="300" height="22"/>
-                                                <color key="backgroundColor" red="0.56411507100000002" green="0.71709645280000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60s-py-ewk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="60s-py-ewk" secondAttribute="height" multiplier="30:11" id="J5g-kU-BNg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCL-8d-1ev">
+                                                        <rect key="frame" x="60" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="gCL-8d-1ev" secondAttribute="height" multiplier="30:11" id="Car-S6-fd0"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rib-KQ-vNE">
+                                                        <rect key="frame" x="120" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="rib-KQ-vNE" secondAttribute="height" multiplier="30:11" id="SAf-aK-3ej"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oji-d6-NNr">
+                                                        <rect key="frame" x="180" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Oji-d6-NNr" secondAttribute="height" multiplier="30:11" id="mYQ-cu-tu3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abx-H7-PoD">
+                                                        <rect key="frame" x="240" y="0.0" width="60" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="abx-H7-PoD" secondAttribute="height" multiplier="30:11" id="ben-72-j7B"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Oji-d6-NNr" secondAttribute="bottom" id="0Uz-vJ-EI2"/>
+                                                    <constraint firstItem="60s-py-ewk" firstAttribute="top" secondItem="RYn-DM-8GU" secondAttribute="top" id="23B-Zl-V2x"/>
+                                                    <constraint firstItem="abx-H7-PoD" firstAttribute="leading" secondItem="Oji-d6-NNr" secondAttribute="trailing" id="3C1-av-fTj"/>
+                                                    <constraint firstItem="rib-KQ-vNE" firstAttribute="leading" secondItem="gCL-8d-1ev" secondAttribute="trailing" id="ChN-Vt-5FC"/>
+                                                    <constraint firstItem="Oji-d6-NNr" firstAttribute="top" secondItem="RYn-DM-8GU" secondAttribute="top" id="DPU-Si-0IL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="60s-py-ewk" secondAttribute="bottom" id="F67-oz-oNd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rib-KQ-vNE" secondAttribute="bottom" id="ICu-2i-lxR"/>
+                                                    <constraint firstItem="Oji-d6-NNr" firstAttribute="leading" secondItem="rib-KQ-vNE" secondAttribute="trailing" id="KHd-4H-qzy"/>
+                                                    <constraint firstItem="abx-H7-PoD" firstAttribute="top" secondItem="RYn-DM-8GU" secondAttribute="top" id="OgZ-ua-vIH"/>
+                                                    <constraint firstItem="gCL-8d-1ev" firstAttribute="leading" secondItem="60s-py-ewk" secondAttribute="trailing" id="PIU-DY-o6Y"/>
+                                                    <constraint firstAttribute="bottom" secondItem="abx-H7-PoD" secondAttribute="bottom" id="Q65-4i-fEs"/>
                                                     <constraint firstAttribute="width" secondItem="RYn-DM-8GU" secondAttribute="height" multiplier="150:11" id="Tkz-Sq-bwj"/>
+                                                    <constraint firstItem="Oji-d6-NNr" firstAttribute="leading" secondItem="rib-KQ-vNE" secondAttribute="trailing" id="ZcS-TI-UEU"/>
+                                                    <constraint firstItem="gCL-8d-1ev" firstAttribute="leading" secondItem="60s-py-ewk" secondAttribute="trailing" id="gns-O8-Waa"/>
+                                                    <constraint firstItem="gCL-8d-1ev" firstAttribute="top" secondItem="RYn-DM-8GU" secondAttribute="top" id="hAj-DW-RR2"/>
+                                                    <constraint firstItem="abx-H7-PoD" firstAttribute="leading" secondItem="Oji-d6-NNr" secondAttribute="trailing" id="hMW-xu-K6e"/>
+                                                    <constraint firstItem="rib-KQ-vNE" firstAttribute="top" secondItem="RYn-DM-8GU" secondAttribute="top" id="mHJ-3L-FVX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gCL-8d-1ev" secondAttribute="bottom" id="pOz-TU-ZIz"/>
+                                                    <constraint firstItem="60s-py-ewk" firstAttribute="leading" secondItem="RYn-DM-8GU" secondAttribute="leading" id="rET-cN-WyS"/>
+                                                    <constraint firstItem="rib-KQ-vNE" firstAttribute="leading" secondItem="gCL-8d-1ev" secondAttribute="trailing" id="we6-rI-ffJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="abx-H7-PoD" secondAttribute="trailing" id="yk6-4Z-ys1"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yB3-Uc-sNP" userLabel="View 2d">
                                                 <rect key="frame" x="0.0" y="74" width="300" height="21"/>
-                                                <color key="backgroundColor" red="1" green="0.53367552009999997" blue="0.51704722579999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100°/99°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01C-Xc-kt7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="01C-Xc-kt7" secondAttribute="height" multiplier="20:7" id="BRD-XF-Chb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99°/98°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfn-5A-DiS">
+                                                        <rect key="frame" x="60" y="0.0" width="60" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Hfn-5A-DiS" secondAttribute="height" multiplier="20:7" id="emG-7Q-Erd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="98°/97°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWh-zP-on6">
+                                                        <rect key="frame" x="120" y="0.0" width="60" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="RWh-zP-on6" secondAttribute="height" multiplier="20:7" id="Ugu-9Z-07T"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="97°/96°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfN-zF-7Rd">
+                                                        <rect key="frame" x="180" y="0.0" width="60" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="xfN-zF-7Rd" secondAttribute="height" multiplier="20:7" id="Ddx-SW-Zld"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="96°/95°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCw-Ha-sDu">
+                                                        <rect key="frame" x="240" y="0.0" width="60" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="NCw-Ha-sDu" secondAttribute="height" multiplier="20:7" id="y7i-5B-GIA"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="Hfn-5A-DiS" firstAttribute="leading" secondItem="01C-Xc-kt7" secondAttribute="trailing" id="0T5-tT-uwl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="01C-Xc-kt7" secondAttribute="bottom" id="3Y9-S0-t6d"/>
+                                                    <constraint firstItem="NCw-Ha-sDu" firstAttribute="top" secondItem="yB3-Uc-sNP" secondAttribute="top" id="FRo-hT-Bew"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Hfn-5A-DiS" secondAttribute="bottom" id="Hmr-kM-Sjn"/>
                                                     <constraint firstAttribute="width" secondItem="yB3-Uc-sNP" secondAttribute="height" multiplier="100:7" id="Ppq-7q-AIE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="NCw-Ha-sDu" secondAttribute="trailing" id="Rls-YG-NBp"/>
+                                                    <constraint firstItem="01C-Xc-kt7" firstAttribute="top" secondItem="yB3-Uc-sNP" secondAttribute="top" id="T8C-Oa-OTp"/>
+                                                    <constraint firstItem="xfN-zF-7Rd" firstAttribute="leading" secondItem="RWh-zP-on6" secondAttribute="trailing" id="Uo6-Cb-76P"/>
+                                                    <constraint firstItem="xfN-zF-7Rd" firstAttribute="top" secondItem="yB3-Uc-sNP" secondAttribute="top" id="UzA-Yp-w1q"/>
+                                                    <constraint firstItem="RWh-zP-on6" firstAttribute="leading" secondItem="Hfn-5A-DiS" secondAttribute="trailing" id="XNw-rg-Eeu"/>
+                                                    <constraint firstItem="01C-Xc-kt7" firstAttribute="leading" secondItem="yB3-Uc-sNP" secondAttribute="leading" id="Yb1-L9-XUs"/>
+                                                    <constraint firstItem="RWh-zP-on6" firstAttribute="leading" secondItem="Hfn-5A-DiS" secondAttribute="trailing" id="ajf-aa-liy"/>
+                                                    <constraint firstItem="NCw-Ha-sDu" firstAttribute="leading" secondItem="xfN-zF-7Rd" secondAttribute="trailing" id="cxP-kg-n1T"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xfN-zF-7Rd" secondAttribute="bottom" id="dOj-Ny-O8O"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RWh-zP-on6" secondAttribute="bottom" id="ijZ-MF-TKI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="NCw-Ha-sDu" secondAttribute="bottom" id="loo-ca-g5s"/>
+                                                    <constraint firstItem="NCw-Ha-sDu" firstAttribute="leading" secondItem="xfN-zF-7Rd" secondAttribute="trailing" id="mPB-PC-OTd"/>
+                                                    <constraint firstItem="Hfn-5A-DiS" firstAttribute="top" secondItem="yB3-Uc-sNP" secondAttribute="top" id="nMF-c1-EvW"/>
+                                                    <constraint firstItem="xfN-zF-7Rd" firstAttribute="leading" secondItem="RWh-zP-on6" secondAttribute="trailing" id="tuq-Y1-eR7"/>
+                                                    <constraint firstItem="Hfn-5A-DiS" firstAttribute="leading" secondItem="01C-Xc-kt7" secondAttribute="trailing" id="xyY-Pz-KCS"/>
+                                                    <constraint firstItem="RWh-zP-on6" firstAttribute="top" secondItem="yB3-Uc-sNP" secondAttribute="top" id="yty-Wb-brH"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BcX-IU-lUN" userLabel="Line 3">
@@ -652,7 +940,6 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="rXp-TA-N3k" secondAttribute="trailing" id="2jr-ul-6GP"/>
                                             <constraint firstItem="HQV-91-78U" firstAttribute="leading" secondItem="tSt-cv-IAp" secondAttribute="leading" id="4c6-5O-jbG"/>
@@ -700,13 +987,11 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="261" height="17"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="8Hi-H3-AZ6" secondAttribute="height" multiplier="300:17" id="6IC-JJ-JCQ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="8Hi-H3-AZ6" secondAttribute="bottom" id="0da-G3-HhV"/>
                                     <constraint firstItem="2uT-fr-9jZ" firstAttribute="leading" secondItem="aQ3-Po-3ts" secondAttribute="leading" id="7ga-mG-WIU"/>
@@ -1060,7 +1345,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltN-Ul-5wN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2605" y="870"/>
+            <point key="canvasLocation" x="2607" y="654"/>
         </scene>
         <!--Daily Weather View Controller-->
         <scene sceneID="8Lw-ZI-WrQ">
