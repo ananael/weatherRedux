@@ -15,8 +15,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
-@property (weak, nonatomic) IBOutlet UIView *centralContainerView;
-@property (weak, nonatomic) IBOutlet UIImageView *centralThemeImage;
+@property (weak, nonatomic) IBOutlet UIImageView *centralImage;
 @property (weak, nonatomic) IBOutlet UIImageView *weatherIcon;
 @property (weak, nonatomic) IBOutlet UILabel *weatherIconLabel;
 @property (weak, nonatomic) IBOutlet UILabel *highTempLabel;
@@ -42,8 +41,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *nextButtonLabel;
 - (IBAction)nextButtonTapped:(id)sender;
-@property (weak, nonatomic) IBOutlet UIView *buttonContainer;
-@property (weak, nonatomic) IBOutlet UIView *bottomContainer;
 
 
 
@@ -115,9 +112,7 @@
 
 -(void)viewDidLayoutSubviews
 {
-    NSLog(@"Adjacent Container: X: %f  Y:%f",self.bottomContainer.frame.origin.x, self.bottomContainer.frame.origin.y);
-    NSLog(@"Container: X: %f  Y:%f",self.buttonContainer.frame.origin.x, self.buttonContainer.frame.origin.y);
-    NSLog(@"Button: X: %f  Y:%f",self.nextButtonLabel.frame.origin.x, self.nextButtonLabel.frame.origin.y);
+    
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
