@@ -26,6 +26,7 @@
 -(NSString *) convertEpochTimeToHumanDay:(NSNumber *)number;
 -(NSString *) convertIntradayHiTemp:(NSNumber *)number1 LoTemp:(NSNumber *)number2;
 -(void) setDayLabelsFromArray:(NSArray *)array forDictionary:(NSMutableDictionary *)dictionary;
+-(void) setNowLabelFontSize:(UILabel *)label;
 -(void) setHiLabelsFromArray:(NSArray *)array forDictionary:(NSMutableDictionary *)dictionary;
 -(void) setLoLabelsFromArray:(NSArray *)array forDictionary:(NSMutableDictionary *)dictionary;
 -(void) setHumidityLabelsFromArray:(NSArray *)array forDictionary:(NSMutableDictionary *)dictionary;

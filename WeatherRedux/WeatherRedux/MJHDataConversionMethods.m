@@ -181,13 +181,45 @@
     
     for (NSInteger i=0; i < [array count]; i++)
     {
-        UILabel *label = array[i];
-        NSString *convertedDay = [self convertEpochTimeToHumanDay: dictionary[@"daily"][@"data"][i][@"time"]];
-        label.text = convertedDay;
-        label.font = [UIFont fontWithName:@"Thonburi" size:20];
-        [label setFont:[UIFont boldSystemFontOfSize:20]];
+//        UILabel *label = array[i];
+//        NSString *convertedDay = [self convertEpochTimeToHumanDay: dictionary[@"daily"][@"data"][i][@"time"]];
+//        label.text = convertedDay;
+//        label.font = [UIFont fontWithName:@"Thonburi" size:20];
+//        [label setFont:[UIFont boldSystemFontOfSize:20]];
+//        
+//        [dayLabels addObject:label];
         
-        [dayLabels addObject:label];
+        if ([[UIDevice currentDevice]userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+        {
+            UILabel *label = array[i];
+            NSString *convertedDay = [self convertEpochTimeToHumanDay: dictionary[@"daily"][@"data"][i][@"time"]];
+            label.text = convertedDay;
+            label.font = [UIFont fontWithName:@"Thonburi" size:24];
+            [label setFont:[UIFont boldSystemFontOfSize:24]];
+            [dayLabels addObject:label];
+        } else
+        {
+            UILabel *label = array[i];
+            NSString *convertedDay = [self convertEpochTimeToHumanDay: dictionary[@"daily"][@"data"][i][@"time"]];
+            label.text = convertedDay;
+            label.font = [UIFont fontWithName:@"Thonburi" size:15];
+            [label setFont:[UIFont boldSystemFontOfSize:15]];
+            
+            [dayLabels addObject:label];
+        }
+    }
+}
+
+-(void) setNowLabelFontSize:(UILabel *)label
+{
+    if ([[UIDevice currentDevice]userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+    {
+        label.font = [UIFont fontWithName:@"Thonburi" size:24];
+        [label setFont:[UIFont boldSystemFontOfSize:24]];
+    }else
+    {
+        label.font = [UIFont fontWithName:@"Thonburi" size:15];
+        [label setFont:[UIFont boldSystemFontOfSize:15]];
     }
 }
 
@@ -387,7 +419,14 @@
 
 -(void) convertToVerticalText:(UILabel *)label
 {
-    label.transform = CGAffineTransformScale(CGAffineTransformMakeRotation(M_PI_2*3), 1.25, 1.5);
+//    label.transform = CGAffineTransformScale(CGAffineTransformMakeRotation(M_PI_2*3), 1.25, 1.5);
+    if ([[UIDevice currentDevice]userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+    {
+        label.transform = CGAffineTransformScale(CGAffineTransformMakeRotation(M_PI_2*3), 1.5, 1.75);
+    } else
+    {
+        label.transform = CGAffineTransformScale(CGAffineTransformMakeRotation(M_PI_2*3), 1.75, 2.0);
+    }
     
 }
 

@@ -117,8 +117,7 @@
     [self.conversion convertToVerticalDayLabels:[self dayLabels]];
     
     self.nowLabel.text = @"now";
-    self.nowLabel.font = [UIFont fontWithName:@"Thonburi" size:20];
-    [self.nowLabel setFont:[UIFont boldSystemFontOfSize:20]];
+    [self.conversion setNowLabelFontSize:self.nowLabel];
     self.nowTempLabel.text = [self.conversion convertToTemperature:self.resultsDictionary[@"currently"][@"temperature"]];
     self.nowDescriptionLabel.text = self.resultsDictionary[@"hourly"][@"summary"];
     self.nowHumidityLabel.text = [self.conversion convertToHumidityLabel:self.resultsDictionary[@"currently"][@"humidity"]];
