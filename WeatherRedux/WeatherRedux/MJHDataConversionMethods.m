@@ -484,17 +484,17 @@
     }
     else if ([summary isEqualToString:@"Heavy Rain"])
     {
-        summary = @"H. Rain";
+        summary = @"Hvy Rain";
     }
     else if ([summary isEqualToString:@"Light Rain"])
     {
-        summary = @"L. Rain";
+        summary = @"Lt Rain";
     }
     
     return summary;
 }
 
--(void) convertString:(NSString *)summary ForNowIconView:(UIImageView *)view
+-(void) convertString:(NSString *)summary ForHourlyIconView:(UIImageView *)view
 {
     if ([summary isEqualToString:@"Clear"])
     {
@@ -523,6 +523,83 @@
     else if ([summary isEqualToString:@"Drizzle"])
     {
         view.image = [UIImage imageNamed:@"light-rain"];
+    }
+}
+
+-(void) convertString:(NSString *)summary ForNowIconView:(UIImageView *)view time1:(NSNumber *)current time2:(NSNumber *)sunrise time3:(NSNumber *)sunset
+{
+    NSInteger convert1 = [current integerValue];
+    NSInteger convert2 = [sunrise integerValue];
+    NSInteger convert3 = [sunset integerValue];
+    
+    if ((convert1 >= convert2) && (convert1 <= convert3))
+    {
+        if ([summary isEqualToString:@"Clear"])
+        {
+            view.image = [UIImage imageNamed:@"sunny"];
+        }
+        else if ([summary isEqualToString:@"Partly Cloudy"])
+        {
+            view.image = [UIImage imageNamed:@"sun-cloud"];
+        }
+        else if ([summary isEqualToString:@"Mostly Cloudy"])
+        {
+            view.image = [UIImage imageNamed:@"MCloudy"];
+        }
+        else if ([summary isEqualToString:@"Overcast"])
+        {
+            view.image = [UIImage imageNamed:@"cloudy"];
+        }
+        else if ([summary isEqualToString:@"Light Rain"])
+        {
+            view.image = [UIImage imageNamed:@"light-rain"];
+        }
+        else if ([summary isEqualToString:@"Rain"])
+        {
+            view.image = [UIImage imageNamed:@"heavy-rain"];
+        }
+        else if ([summary isEqualToString:@"Drizzle"])
+        {
+            view.image = [UIImage imageNamed:@"light-rain"];
+        }
+        else if ([summary isEqualToString:@"Heavy Rain"])
+        {
+            view.image = [UIImage imageNamed:@"heavy-rain"];
+        }
+    } else
+    {
+        if ([summary isEqualToString:@"Clear"])
+        {
+            view.image = [UIImage imageNamed:@"moon"];
+        }
+        else if ([summary isEqualToString:@"Partly Cloudy"])
+        {
+            view.image = [UIImage imageNamed:@"moon-cloud"];
+        }
+        else if ([summary isEqualToString:@"Mostly Cloudy"])
+        {
+            view.image = [UIImage imageNamed:@"moon-MCloudy"];
+        }
+        else if ([summary isEqualToString:@"Overcast"])
+        {
+            view.image = [UIImage imageNamed:@"cloudy"];
+        }
+        else if ([summary isEqualToString:@"Light Rain"])
+        {
+            view.image = [UIImage imageNamed:@"moon-rain"];
+        }
+        else if ([summary isEqualToString:@"Rain"])
+        {
+            view.image = [UIImage imageNamed:@"heavy-rain"];
+        }
+        else if ([summary isEqualToString:@"Drizzle"])
+        {
+            view.image = [UIImage imageNamed:@"moon-rain"];
+        }
+        else if ([summary isEqualToString:@"Heavy Rain"])
+        {
+            view.image = [UIImage imageNamed:@"heavy-rain"];
+        }
     }
 }
 
@@ -558,40 +635,80 @@
     }
 }
 
-
--(void) convertString:(NSString *)summary ForMainIconView:(UIImageView *)view
+-(void) convertString:(NSString *)summary ForMainIconView:(UIImageView *)view time1:(NSNumber *)current time2:(NSNumber *)sunrise time3:(NSNumber *)sunset
 {
-    if ([summary isEqualToString:@"Clear"])
+    NSInteger convert1 = [current integerValue];
+    NSInteger convert2 = [sunrise integerValue];
+    NSInteger convert3 = [sunset integerValue];
+    
+    if ((convert1 >= convert2) && (convert1 < convert3))
     {
-        view.image = [UIImage imageNamed:@"sunny3"];
-    }
-    else if ([summary isEqualToString:@"Partly Cloudy"])
+        if ([summary isEqualToString:@"Clear"])
+        {
+            view.image = [UIImage imageNamed:@"sunny3"];
+        }
+        else if ([summary isEqualToString:@"Partly Cloudy"])
+        {
+            view.image = [UIImage imageNamed:@"sun-cloud3"];
+        }
+        else if ([summary isEqualToString:@"Mostly Cloudy"])
+        {
+            view.image = [UIImage imageNamed:@"MCloudy3"];
+        }
+        else if ([summary isEqualToString:@"Overcast"])
+        {
+            view.image = [UIImage imageNamed:@"cloudy3"];
+        }
+        else if ([summary isEqualToString:@"Light Rain"])
+        {
+            view.image = [UIImage imageNamed:@"light-rain3"];
+        }
+        else if ([summary isEqualToString:@"Rain"])
+        {
+            view.image = [UIImage imageNamed:@"heavy-rain3"];
+        }
+        else if ([summary isEqualToString:@"Drizzle"])
+        {
+            view.image = [UIImage imageNamed:@"light-rain3"];
+        }
+        else if ([summary isEqualToString:@"Heavy Rain"])
+        {
+            view.image = [UIImage imageNamed:@"heavy-rain3"];
+        }
+    } else
     {
-        view.image = [UIImage imageNamed:@"sun-cloud3"];
-    }
-    else if ([summary isEqualToString:@"Mostly Cloudy"])
-    {
-        view.image = [UIImage imageNamed:@"MCloudy3"];
-    }
-    else if ([summary isEqualToString:@"Overcast"])
-    {
-        view.image = [UIImage imageNamed:@"cloudy3"];
-    }
-    else if ([summary isEqualToString:@"Light Rain"])
-    {
-        view.image = [UIImage imageNamed:@"light-rain3"];
-    }
-    else if ([summary isEqualToString:@"Rain"])
-    {
-        view.image = [UIImage imageNamed:@"heavy-rain3"];
-    }
-    else if ([summary isEqualToString:@"Drizzle"])
-    {
-        view.image = [UIImage imageNamed:@"light-rain3"];
-    }
-    else if ([summary isEqualToString:@"Heavy Rain"])
-    {
-        view.image = [UIImage imageNamed:@"heavy-rain3"];
+        if ([summary isEqualToString:@"Clear"])
+        {
+            view.image = [UIImage imageNamed:@"moon3"];
+        }
+        else if ([summary isEqualToString:@"Partly Cloudy"])
+        {
+            view.image = [UIImage imageNamed:@"moon-cloud3"];
+        }
+        else if ([summary isEqualToString:@"Mostly Cloudy"])
+        {
+            view.image = [UIImage imageNamed:@"moon-MCloudy3"];
+        }
+        else if ([summary isEqualToString:@"Overcast"])
+        {
+            view.image = [UIImage imageNamed:@"cloudy3"];
+        }
+        else if ([summary isEqualToString:@"Light Rain"])
+        {
+            view.image = [UIImage imageNamed:@"moon-rain3"];
+        }
+        else if ([summary isEqualToString:@"Rain"])
+        {
+            view.image = [UIImage imageNamed:@"heavy-rain3"];
+        }
+        else if ([summary isEqualToString:@"Drizzle"])
+        {
+            view.image = [UIImage imageNamed:@"moon-rain3"];
+        }
+        else if ([summary isEqualToString:@"Heavy Rain"])
+        {
+            view.image = [UIImage imageNamed:@"heavy-rain3"];
+        }
     }
 }
 

@@ -62,6 +62,15 @@
 		D2A40C2119FDC50900B17F5E /* thunderstorm2.png in Resources */ = {isa = PBXBuildFile; fileRef = D2A40C0319FDC50900B17F5E /* thunderstorm2.png */; };
 		D2A40C2219FDC50900B17F5E /* thunderstorm3.png in Resources */ = {isa = PBXBuildFile; fileRef = D2A40C0419FDC50900B17F5E /* thunderstorm3.png */; };
 		D2B2B52819FFEB580085FFB8 /* MJHConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B2B52719FFEB580085FFB8 /* MJHConstants.m */; };
+		D2E2612B1A1997510081B592 /* moon-cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E261221A1997510081B592 /* moon-cloud.png */; };
+		D2E2612C1A1997510081B592 /* moon-cloud2.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E261231A1997510081B592 /* moon-cloud2.png */; };
+		D2E2612D1A1997510081B592 /* moon-cloud3.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E261241A1997510081B592 /* moon-cloud3.png */; };
+		D2E2612E1A1997510081B592 /* moon-MCloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E261251A1997510081B592 /* moon-MCloudy.png */; };
+		D2E2612F1A1997510081B592 /* moon-MCloudy2.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E261261A1997510081B592 /* moon-MCloudy2.png */; };
+		D2E261301A1997510081B592 /* moon-MCloudy3.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E261271A1997510081B592 /* moon-MCloudy3.png */; };
+		D2E261311A1997510081B592 /* moon-rain.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E261281A1997510081B592 /* moon-rain.png */; };
+		D2E261321A1997510081B592 /* moon-rain2.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E261291A1997510081B592 /* moon-rain2.png */; };
+		D2E261331A1997510081B592 /* moon-rain3.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E2612A1A1997510081B592 /* moon-rain3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +150,15 @@
 		D2A40C0419FDC50900B17F5E /* thunderstorm3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thunderstorm3.png; sourceTree = "<group>"; };
 		D2B2B52619FFEB580085FFB8 /* MJHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHConstants.h; sourceTree = "<group>"; };
 		D2B2B52719FFEB580085FFB8 /* MJHConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHConstants.m; sourceTree = "<group>"; };
+		D2E261221A1997510081B592 /* moon-cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moon-cloud.png"; sourceTree = "<group>"; };
+		D2E261231A1997510081B592 /* moon-cloud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moon-cloud2.png"; sourceTree = "<group>"; };
+		D2E261241A1997510081B592 /* moon-cloud3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moon-cloud3.png"; sourceTree = "<group>"; };
+		D2E261251A1997510081B592 /* moon-MCloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moon-MCloudy.png"; sourceTree = "<group>"; };
+		D2E261261A1997510081B592 /* moon-MCloudy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moon-MCloudy2.png"; sourceTree = "<group>"; };
+		D2E261271A1997510081B592 /* moon-MCloudy3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moon-MCloudy3.png"; sourceTree = "<group>"; };
+		D2E261281A1997510081B592 /* moon-rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moon-rain.png"; sourceTree = "<group>"; };
+		D2E261291A1997510081B592 /* moon-rain2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moon-rain2.png"; sourceTree = "<group>"; };
+		D2E2612A1A1997510081B592 /* moon-rain3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moon-rain3.png"; sourceTree = "<group>"; };
 		DA3B3249C2EF4C65BBE84B4B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -320,6 +338,15 @@
 				D2A40BF319FDC50900B17F5E /* moon.png */,
 				D2A40BF419FDC50900B17F5E /* moon2.png */,
 				D2A40BF519FDC50900B17F5E /* moon3.png */,
+				D2E261221A1997510081B592 /* moon-cloud.png */,
+				D2E261231A1997510081B592 /* moon-cloud2.png */,
+				D2E261241A1997510081B592 /* moon-cloud3.png */,
+				D2E261251A1997510081B592 /* moon-MCloudy.png */,
+				D2E261261A1997510081B592 /* moon-MCloudy2.png */,
+				D2E261271A1997510081B592 /* moon-MCloudy3.png */,
+				D2E261281A1997510081B592 /* moon-rain.png */,
+				D2E261291A1997510081B592 /* moon-rain2.png */,
+				D2E2612A1A1997510081B592 /* moon-rain3.png */,
 				D2A40BF619FDC50900B17F5E /* snow.png */,
 				D2A40BF719FDC50900B17F5E /* snow2.png */,
 				D2A40BF819FDC50900B17F5E /* snow3.png */,
@@ -430,11 +457,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E2612B1A1997510081B592 /* moon-cloud.png in Resources */,
 				D2A40BE619FDC4E500B17F5E /* next-button-white.png in Resources */,
 				D2A40C0A19FDC50900B17F5E /* heavy-rain3.png in Resources */,
 				D2A40C1419FDC50900B17F5E /* snow.png in Resources */,
 				D2A40C1819FDC50900B17F5E /* sunny2.png in Resources */,
 				D2A40C0B19FDC50900B17F5E /* light-rain.png in Resources */,
+				D2E261331A1997510081B592 /* moon-rain3.png in Resources */,
 				D2A40C1B19FDC50900B17F5E /* sun-cloud2.png in Resources */,
 				D2A40C0819FDC50900B17F5E /* heavy-rain.png in Resources */,
 				D2A40C0F19FDC50900B17F5E /* MCloudy2.png in Resources */,
@@ -450,7 +479,9 @@
 				D2A40C1919FDC50900B17F5E /* sunny3.png in Resources */,
 				D2A40BB919FDC18E00B17F5E /* Main.storyboard in Resources */,
 				D2A40C2019FDC50900B17F5E /* thunderstorm.png in Resources */,
+				D2E2612E1A1997510081B592 /* moon-MCloudy.png in Resources */,
 				D2A40BD819FDC4B400B17F5E /* weatherDeco.png in Resources */,
+				D2E261301A1997510081B592 /* moon-MCloudy3.png in Resources */,
 				D2A40C2119FDC50900B17F5E /* thunderstorm2.png in Resources */,
 				D2A40C0919FDC50900B17F5E /* heavy-rain2.png in Resources */,
 				D2A40C0719FDC50900B17F5E /* cloudy3.png in Resources */,
@@ -462,18 +493,23 @@
 				D27AFE081A11814000546A28 /* home-white.png in Resources */,
 				D2A40C1519FDC50900B17F5E /* snow2.png in Resources */,
 				D2A40BE319FDC4E500B17F5E /* back-button-black.png in Resources */,
+				D2E2612C1A1997510081B592 /* moon-cloud2.png in Resources */,
+				D2E2612D1A1997510081B592 /* moon-cloud3.png in Resources */,
 				D2A40C0C19FDC50900B17F5E /* light-rain2.png in Resources */,
 				D27AFE071A11814000546A28 /* home-black.png in Resources */,
 				D2A40C0619FDC50900B17F5E /* cloudy2.png in Resources */,
+				D2E2612F1A1997510081B592 /* moon-MCloudy2.png in Resources */,
 				D2A40C2219FDC50900B17F5E /* thunderstorm3.png in Resources */,
 				D2A40BDC19FDC4D200B17F5E /* Earth 2.png in Resources */,
 				D27AFE041A11812200546A28 /* hourly-white.png in Resources */,
+				D2E261311A1997510081B592 /* moon-rain.png in Resources */,
 				D2A40BDD19FDC4D200B17F5E /* Earth inverted.png in Resources */,
 				D2A40C1119FDC50900B17F5E /* moon.png in Resources */,
 				D2A40BBB19FDC18E00B17F5E /* Images.xcassets in Resources */,
 				D2A40C0E19FDC50900B17F5E /* MCloudy.png in Resources */,
 				D2A40C1219FDC50900B17F5E /* moon2.png in Resources */,
 				D2A40C1F19FDC50900B17F5E /* sun-rain3.png in Resources */,
+				D2E261321A1997510081B592 /* moon-rain2.png in Resources */,
 				D2A40C1019FDC50900B17F5E /* MCloudy3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

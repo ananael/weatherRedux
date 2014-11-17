@@ -40,9 +40,10 @@
 -(NSString *) convertToVisibilityLabel:(NSNumber *)number;
 
 -(NSString *) summaryConversion:(NSString *)summary;
--(void) convertString:(NSString *)summary ForNowIconView:(UIImageView *)view;
+-(void) convertString:(NSString *)summary ForHourlyIconView:(UIImageView *)view;
+-(void) convertString:(NSString *)summary ForNowIconView:(UIImageView *)view time1:(NSNumber *)current time2:(NSNumber *)sunrise time3:(NSNumber *)sunset;
 -(void) convertString:(NSString *)summary ForDayIconView:(UIImageView *)view;
--(void) convertString:(NSString *)summary ForMainIconView:(UIImageView *)view;
+-(void) convertString:(NSString *)summary ForMainIconView:(UIImageView *)view time1:(NSNumber *)current time2:(NSNumber *)sunrise time3:(NSNumber *)sunset;
 
 -(NSMutableArray *) setHourlyDateFromDictionary:(NSMutableDictionary *)dictionary;
 -(NSMutableArray *) setHourFromDictionary:(NSMutableDictionary *)dictionary;

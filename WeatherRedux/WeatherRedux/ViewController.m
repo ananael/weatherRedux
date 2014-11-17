@@ -71,7 +71,7 @@
      {
          self.resultsDictionary = JSON;
          
-         [conversion convertString:self.resultsDictionary[@"currently"][@"summary"] ForMainIconView:self.weatherIcon];
+         [conversion convertString:self.resultsDictionary[@"currently"][@"summary"] ForMainIconView:self.weatherIcon time1:self.resultsDictionary[@"currently"][@"time"] time2:self.resultsDictionary[@"daily"][@"data"][0][@"sunriseTime"] time3:self.resultsDictionary[@"daily"][@"data"][0][@"sunsetTime"]];
          self.weatherIconLabel.text = [conversion summaryConversion:self.resultsDictionary[@"currently"][@"summary"]];
          self.highTempLabel.text = [conversion convertToHiTemperature:self.resultsDictionary[@"daily"][@"data"][0][@"apparentTemperatureMax"]];
          self.lowTempLabel.text = [conversion convertToLoTemperature:self.resultsDictionary[@"daily"][@"data"][0][@"apparentTemperatureMin"]];

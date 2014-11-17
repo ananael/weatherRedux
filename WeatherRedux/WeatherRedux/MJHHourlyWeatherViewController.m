@@ -101,7 +101,7 @@
     cell.precipLabel.backgroundColor = [UIColor clearColor];
     
     self.icons = [conversion setHourlyIconFromDictionary:self.resultsDictionary];
-    [conversion convertString:self.icons[indexPath.row] ForNowIconView:cell.iconView];
+    [conversion convertString:self.icons[indexPath.row] ForHourlyIconView:cell.iconView];
     cell.iconView.backgroundColor = [UIColor clearColor];
     
     self.hourlyDate = [conversion setHourlyDateFromDictionary:self.resultsDictionary];

@@ -125,7 +125,7 @@
     self.nowPrecipLabel.text = [self.conversion convertToPrecipProbability:self.resultsDictionary[@"currently"][@"precipType"] Probability:self.resultsDictionary[@"currently"][@"precipProbability"]];
     self.nowWindLabel.text = [self.conversion convertToWind:self.resultsDictionary[@"currently"][@"windBearing"] AndSpeed:self.resultsDictionary[@"currently"][@"windSpeed"]];
     self.nowVisibilityLabel.text = [self.conversion convertToVisibilityLabel:self.resultsDictionary[@"currently"][@"visibility"]];
-    [self.conversion convertString:self.resultsDictionary[@"currently"][@"summary"] ForNowIconView:self.nowIconImage];
+    [self.conversion convertString:self.resultsDictionary[@"currently"][@"summary"] ForNowIconView:self.nowIconImage time1:self.resultsDictionary[@"currently"][@"time"] time2:self.resultsDictionary[@"daily"][@"data"][0][@"sunriseTime"] time3:self.resultsDictionary[@"daily"][@"data"][0][@"sunsetTime"]];
     self.nowDateLabel.text = [self.conversion convertEpochTimeToHumanDate:self.resultsDictionary[@"currently"][@"time"]];
 
     [self.conversion setDayLabelsFromArray:[self dayLabels2] forDictionary:self.resultsDictionary];
